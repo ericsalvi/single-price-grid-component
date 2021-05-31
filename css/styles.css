@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --light-cyan: hsl(180, 47%, 52%);
+  --yellow: hsl(71, 73%, 54%);
+  --gray: hsl(204, 43%, 93%);
+  --blue: hsl(218, 22%, 67%);
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  background: var(--gray);
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  padding: 0 2rem;
+  place-items: center;
+}
+main {
+  border-radius: 5px;
+  box-shadow: -1px 18px 31px 1px rgba(109 132 171 / 20%);
+  -webkit-box-shadow: -1px 18px 31px 1px rgba(109 132 171 / 20%);
+  -moz-box-shadow: -1px 18px 31px 1px rgba(109 132 171 / 20%);
+  display: -ms-grid;
+  display: grid;
+  max-width: 375px;
+  overflow: hidden;
+}
+.community {
+  background: white;
+  color: var(--cyan);
+  padding: 28px 24px 32px;
+}
+.pricing {
+  background: var(--cyan);
+  color: white;
+  padding: 25px 24px 24px;
+}
+.about {
+  background: var(--light-cyan);
+  color: white;
+  padding: 25px 24px 28px;
+}
+h1 {
+  color: var(--cyan);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.25px;
+  margin: 0;
+  padding-bottom: 25px;
+}
+h2 {
+  color: var(--yellow);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.7px;
+  line-height: 1.2;
+  margin: 0;
+  padding-bottom: 18px;
+}
+h3 {
+  font-size: 1.1rem;
+  margin: 0;
+  padding-bottom: 19px;
+}
+.community p {
+  font-size: 0.86rem;
+  line-height: 1.9;
+  margin: 0;
+}
+.pricing__info {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 400;
+  letter-spacing: -0.25px;
+  padding-bottom: 9px;
+}
+.pricing__info span {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  padding-right: 13px;
+}
+.pricing p {
+  font-size: 0.975rem;
+  margin: 0;
+  padding-bottom: 30px;
+}
+.btn {
+  background: var(--yellow);
+  border-radius: 5px;
+  box-shadow: 0 10px 18px -4px rgba(0 0 0 / 20%);
+  -webkit-box-shadow: 0 10px 18px -4px rgba(0 0 0 / 20%);
+  -moz-box-shadow: 0 10px 18px -4px rgba(0 0 0 / 20%);
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 15px;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.btn:hover {
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
+  box-shadow: 0 10px 10px -10px rgb(0 0 0 / 50%);
+  -webkit-box-shadow: 0 10px 10px -10px rgb(0 0 0 / 50%);
+  -moz-box-shadow: 0 10px 10px -10px rgb(0 0 0 / 50%);
+}
+.btn:active {
+  background: hsl(71, 73%, 48%);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul * + * {
+  padding-top: 5px;
+}
+li {
+  font-size: 0.85rem;
+}
+
+@media (min-width: 560px) {
+  main {
+    grid-template-areas:
+      "community community"
+      "pricing about";
+    -ms-grid-columns: 50% 50%;
+    grid-template-columns: 50% 50%;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    max-width: 635px;
+  }
+  .community,
+  .pricing,
+  .about {
+    padding: 42px 40px 38px;
+  }
+  .community {
+    grid-area: community;
+  }
+  .pricing {
+    grid-area: pricing;
+  }
+  .about {
+    grid-area: about;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.19rem;
+    padding-bottom: 9px;
+  }
+  .community p {
+    font-size: 1rem;
+    line-height: 1.6;
+    letter-spacing: -0.15px;
+  }
+}
