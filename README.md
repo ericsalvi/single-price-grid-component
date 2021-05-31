@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [frontendmentor.io]()
-- Live Site URL: []()
+- Solution URL: [frontendmentor.io](https://www.frontendmentor.io/solutions/a-fun-one-single-price-grid-component-made-using-grid-and-rem-units-z30rEVxsw)
+- Live Site URL: [https://ericsalvi.github.io/single-price-grid-component/](https://ericsalvi.github.io/single-price-grid-component/)
 
 ## My process
 
