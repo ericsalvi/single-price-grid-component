@@ -14,7 +14,7 @@
   box-sizing: border-box;
   font-family: "Karla", sans-serif;
   font-size: 16px;
-  -webkit-font-smoothing: antialiased;
+/*   -webkit-font-smoothing: antialiased; */
 }
 body {
   background: var(--gray);
@@ -72,6 +72,7 @@ h3 {
   padding-bottom: 19px;
 }
 .community p {
+  color: hsl(227, 8%, 79%);
   font-size: 0.86rem;
   line-height: 1.9;
   margin: 0;
